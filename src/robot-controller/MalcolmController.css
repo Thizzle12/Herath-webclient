@@ -23,16 +23,22 @@
   display: inline-block;
   padding: 0 !important;
   width: 70px;
-  margin-right: 2px; 
+  margin-right: 2px;
 }
 
 .button-div{
   width: 100%;
 }
 
+.btn-success{
+  background: #62efff !important;
+  color: #008ba3;
+  border: 1px solid white;
+}
+
 .control-btn{
   margin: 10px;
-  width: 100px;
+  width: 150px;
 }
 
 .disconnect-btn{

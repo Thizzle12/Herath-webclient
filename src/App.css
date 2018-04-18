@@ -1,39 +1,37 @@
-.App {
-  text-align: center;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 .app-header{
-  text-align: center;
-  background-color: #5cb85c;
-  padding: 20px;
-  color: white;
+  background: #008ba3;
+  margin-bottom: 0 !important;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.herath-navbar{
-  display: table;
-  margin: 0 auto;
+.logo{
+  margin: 0;
+  display: inline-block;
+  margin-left: -189px;
 }
 
-.changing-page{
-  border: 1px solid black;
+.logo img{
+  height: 100px;
 }
 
+.search-bar{
+  display: inline-block;
 
-
-
-
-.App-intro {
-  font-size: large;
 }
 
-.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
-.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-    .MultiCarousel .MultiCarousel-inner .item { float: left;}
-    .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-.MultiCarousel .leftLst { left:0; }
-.MultiCarousel .rightLst { right:0; }
+.search-bar input{
+  margin-top: 66px;
+  margin-left: 200px;
+  width: 200px;
+}
 
-    .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+.search-bar input:focus{
+  outline: none;
+  border: 1px solid #cccccc;
+   -webkit-box-shadow: none !important;
+   -moz-box-shadow: none !important;
+   box-shadow: none !important;
+}

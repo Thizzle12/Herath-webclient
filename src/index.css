@@ -10,12 +10,13 @@ footer .row {
   align-items: center;
 }
 header{
-  font-size: 2rem;
+  font-size: 1.8rem;
   justify-content: center;
 }
 
 .header-navbar{
-  background: #f3f3f3;
+  background: #00bcd4;
+  color: white;
 }
 
 nav p{
@@ -24,7 +25,11 @@ nav p{
 }
 
 nav p:hover{
-  background-color: #e3e3e3;
+  background-color: #008ba3;
+}
+
+.active-nav{
+  background-color: #008ba3;
 }
 
 header nav {

@@ -16,19 +16,19 @@ class NavigationBar extends Component{
   }
 
   videoplayerChosen = () => {
-    sessionStorage.tabOpen = '2';
+    sessionStorage.tabOpen = '3';
     this.props.history.push('/videoplayer')
     this.forceUpdate();
   }
 
   speechChosen = () =>{
-    sessionStorage.tabOpen = '3';
+    sessionStorage.tabOpen = '4';
     this.props.history.push('/speech')
     this.forceUpdate();
   }
 
   controllerChosen = () =>{
-    sessionStorage.tabOpen = '4';
+    sessionStorage.tabOpen = '2';
     this.props.history.push('/controller')
     this.forceUpdate();
   }
@@ -40,9 +40,9 @@ class NavigationBar extends Component{
         <header className="container">
          <div className="row">
            <nav className="text-right">
-           <p onClick={this.homeChoosen}>Home</p>
-            <p onClick={this.controllerChosen}>Robot Controller</p>
-        		<p onClick={this.videoplayerChosen}>Videoplayer</p>
+            <p className={sessionStorage.tabOpen === '1' ? "active-nav" : ""} onClick={this.homeChoosen}>Home</p>
+            <p className={sessionStorage.tabOpen === '2' ? "active-nav" : ""} onClick={this.controllerChosen}>Robot Controller</p>
+        		<p className={sessionStorage.tabOpen === '3' ? "active-nav" : ""} onClick={this.videoplayerChosen}>Videoplayer</p>
             <p>contact</p>
          	</nav>
          </div>
